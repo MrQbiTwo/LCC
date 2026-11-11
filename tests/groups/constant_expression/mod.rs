@@ -1,0 +1,13 @@
+// C89 integer constant expressions are a syntactic subset of foldable arithmetic.
+use crate::Case;
+
+mod accepted;
+mod constraints;
+
+// Compose focused case families without changing their IDs or order.
+pub fn cases() -> Vec<Case> {
+    let mut cases = Vec::new();
+    accepted::append(&mut cases);
+    constraints::append(&mut cases);
+    cases
+}
