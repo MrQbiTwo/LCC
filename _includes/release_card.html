@@ -1,0 +1,18 @@
+<article class="release-card" data-release data-channel="{{ include.release.channel }}" data-date="{{ include.release.date }}" data-passed="{{ include.release.passed }}" data-search="{{ include.release.commit }} {{ include.release.nightly_number }} {{ include.release.nightly_encoded }}">
+  <div class="release-main">
+    <div class="release-title-row">
+      <h3><a href="{{ include.release.path | append: '/tests/' | relative_url }}">{{ include.release.title | escape }}</a></h3>
+      {% include badge.html status=include.release.channel %}
+    </div>
+    <div class="release-source"><span>Catalog</span> <code title="{{ include.release.commit }}">{{ include.release.commit | truncate: 12, '' }}</code><span class="demo-mark">Demo</span></div>
+    {% if include.release.channel == 'Nightly' %}
+      <code class="nightly-id" title="Nightly number">{{ include.release.nightly_encoded }}</code>
+    {% endif %}
+  </div>
+  <div class="release-date"><time datetime="{{ include.release.date }}">{{ include.release.date | date: '%b %d, %Y' }}</time></div>
+  <div class="release-results">
+    <div class="test-total">{{ include.release.passed }}<span> / {{ include.release.total }}</span></div>
+    <span class="result-detail">{{ include.release.failed }} failed</span>
+  </div>
+  {% include release_links.html release=include.release %}
+</article>

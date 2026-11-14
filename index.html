@@ -1,0 +1,37 @@
+---
+title: Release reports
+nav: home
+---
+<header class="page-heading home-heading">
+  <p class="eyebrow">LITTLECCOMPILER / RELEASE ARCHIVE</p>
+  <h1>Release reports</h1>
+  <p>Test results, feature coverage and platform support by version.</p>
+</header>
+
+<section aria-labelledby="recent-releases">
+  <div class="section-heading">
+    <h2 id="recent-releases">Recent releases <span class="count-label">{{ site.data.releases | size }}</span></h2>
+    <a class="text-link" href="{{ '/releases/' | relative_url }}">Open Release Finder <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+  {% include release_list.html %}
+</section>
+
+<nav class="report-directory" aria-label="Report types">
+  <a href="{{ '/releases/demo-nightly/tests/' | relative_url }}">
+    <span class="directory-icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span>
+    <span><strong>Tests Passed</strong><small>Case IDs, descriptions and outcomes</small></span>
+    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+  </a>
+  <a href="{{ '/releases/demo-nightly/features/' | relative_url }}">
+    <span class="directory-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+    <span><strong>Supported Features</strong><small>Language and standard library coverage</small></span>
+    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+  </a>
+  <a href="{{ '/releases/demo-nightly/platforms/' | relative_url }}">
+    <span class="directory-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></span>
+    <span><strong>Supported Platforms</strong><small>Compiler hosts and code targets</small></span>
+    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+  </a>
+</nav>
+
+<div class="home-note"><span>Reports above use demonstration data.</span><a href="https://littleccompiler.org/">Project website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>

@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% assign release = page.release %}
+<div class="breadcrumbs"><a href="{{ '/releases/' | relative_url }}">Release Finder</a><span>/</span><span>{{ release.title | escape }}</span></div>
+<header class="report-heading"><div><div class="release-title-row">{% include badge.html status=release.channel %}<span class="muted small">Demonstration release</span></div><h1>{{ page.title }}</h1><p>{{ release.title | escape }} <span class="muted">· {{ release.date | date: '%B %d, %Y' }} UTC</span></p></div><div class="report-identity"><span class="meta-label">CATALOG SOURCE COMMIT</span><code title="{{ release.commit }}">{{ release.commit | truncate: 12, '' }}</code>{% if release.channel == 'Nightly' %}<span class="meta-label">NIGHTLY NUMBER</span><code>{{ release.nightly_encoded }}</code>{% endif %}</div></header>
+<nav class="report-tabs" aria-label="Release reports">{% for report in site.data.report_types %}<a href="{{ release.path | append: '/' | append: report.key | append: '/' | relative_url }}" {% if page.report_type == report.key %}aria-current="page"{% endif %}>{{ report.title }}</a>{% endfor %}</nav>
+<p class="notice"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Local demonstration. Outcomes and support states illustrate this page; they are not release verification results.</p>
+{% if page.report_type == 'tests' %}{% include tests_report.html %}{% elsif page.report_type == 'features' %}{% include features_report.html %}{% else %}{% include platforms_report.html %}{% endif %}
+<div class="report-bottom"><a class="text-link" href="{{ '/releases/' | relative_url }}"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Release Finder</a><span class="muted small">Report data belongs to this demonstration version.</span></div>

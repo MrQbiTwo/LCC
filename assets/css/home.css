@@ -1,0 +1,16 @@
+/* The home page is an index of reports, without a marketing hero. */
+.home-heading { padding-top: 38px; padding-bottom: 42px; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+.section-heading h2 { margin: 0; font-size: 15px; }
+.count-label { display: inline-block; margin-left: 8px; padding: 0 6px; color: var(--muted); background: var(--soft); font: 11px/1.7 Consolas, monospace; border: 1px solid var(--line); border-radius: 3px; vertical-align: middle; }
+.report-directory { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 38px; padding-block: 25px; border-block: 1px solid var(--line); }
+.report-directory > a { display: flex; align-items: center; gap: 12px; color: var(--ink); min-width: 0; }
+.report-directory > a:hover { text-decoration: none; }
+.report-directory > a:hover strong { color: var(--accent); }
+.directory-icon { font-size: 16px; color: var(--muted); }
+.report-directory strong { display: block; font-size: 12px; }
+.report-directory small { display: block; color: var(--muted); font-size: 10px; margin-top: 4px; }
+.report-directory > a > i { font-size: 9px; color: var(--muted); margin-left: auto; }
+.home-note { display: flex; justify-content: space-between; gap: 20px; font-size: 11px; color: var(--muted); margin-top: 18px; }
+.home-note a { color: var(--muted); }
+.home-note i { font-size: 9px; margin-left: 6px; }

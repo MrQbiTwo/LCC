@@ -1,0 +1,7 @@
+{
+  "source_repository": "https://github.com/MrQbiTwo/LCC",
+  "source_commit": "99f935a524794073dd66c3d624268b89edfcb831",
+  "source_catalog": "tests/catalog.rs",
+  "imported_at": "2026-11-14",
+  "content": "Case IDs, purposes and groups only. No compiler source or execution results."
+}

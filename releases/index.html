@@ -1,0 +1,15 @@
+---
+title: Release Finder
+nav: releases
+---
+<header class="page-heading"><p class="eyebrow">RELEASE ARCHIVE</p><h1>Release Finder</h1><p>Filter builds by channel, identifier, date or test results.</p></header>
+<form id="release-filters" class="filter-panel">
+  <div class="filter-top"><fieldset class="channel-filter"><legend>Release channel</legend><label><input type="radio" name="channel" value="All" checked><span>All releases</span></label><label><input type="radio" name="channel" value="Stable"><span>Stable</span></label><label><input type="radio" name="channel" value="Snapshot"><span>Snapshot</span></label><label><input type="radio" name="channel" value="Nightly"><span>Nightly</span></label></fieldset><button type="reset" class="text-button">Reset filters</button></div>
+  <div class="filter-grid"><label class="search-field">Nightly number or commit SHA<input type="search" name="query" placeholder="Search a Nightly identifier…" autocomplete="off"><small>Matches Nightly builds only. Full or partial identifiers.</small></label><label>From date<input type="date" name="from"></label><label>To date<input type="date" name="to"></label><label>Min. tests passed<input type="number" name="min" min="0" step="1" placeholder="0"></label><label>Max. tests passed<input type="number" name="max" min="0" step="1" placeholder="Any"></label></div>
+  <p id="filter-error" class="filter-error" role="alert" hidden></p>
+</form>
+<div class="results-heading"><p id="release-count" aria-live="polite">3 demonstration releases</p><span class="muted small">Newest first · All dates UTC</span></div>
+{% include release_list.html %}
+<div class="empty-state" id="no-releases" hidden><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><h2>No matching releases</h2><p>Try a wider date range or fewer filters.</p><button class="button" type="button" data-reset-releases>Clear filters</button></div>
+<p class="data-note">Demonstration data. No release binaries are available.</p>
+<noscript><p class="notice">Enable JavaScript to filter. All releases and their reports remain available below.</p></noscript>

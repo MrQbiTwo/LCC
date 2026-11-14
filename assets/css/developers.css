@@ -1,0 +1,8 @@
+/* Brief, manually maintained author contacts. */
+.author-row { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding-block: 30px; border-block: 1px solid var(--line); }
+.author-identity h2 { font-size: 20px; margin-bottom: 8px; }
+.author-identity p { margin-bottom: 10px; font-size: 13px; }
+.author-contact { align-self: center; }
+.author-contact p { color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+.author-contact a { font-size: 13px; overflow-wrap: anywhere; }
+.author-contact i { font-size: 9px; margin-left: 6px; }

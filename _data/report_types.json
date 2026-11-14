@@ -1,0 +1,14 @@
+[
+  {
+    "key": "tests",
+    "title": "Tests Passed"
+  },
+  {
+    "key": "features",
+    "title": "Supported Features"
+  },
+  {
+    "key": "platforms",
+    "title": "Supported Platforms"
+  }
+]

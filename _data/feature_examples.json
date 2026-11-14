@@ -1,0 +1,229 @@
+[
+  {
+    "name": "Integer arithmetic",
+    "category": "Language · expressions",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Supported",
+    "notes": "Demonstrates a supported language entry; actual verification will be attached per release."
+  },
+  {
+    "name": "Structures and unions",
+    "category": "Language · types",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Supported",
+    "notes": "Example coverage of aggregate types."
+  },
+  {
+    "name": "Function pointers",
+    "category": "Language · declarators",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Partially Supported",
+    "notes": "Illustrates a feature with documented limitations."
+  },
+  {
+    "name": "printf",
+    "category": "<stdio.h> · function",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Partially Supported",
+    "notes": "Example: basic integer and string formatting; complete formatting coverage is not asserted."
+  },
+  {
+    "name": "fopen",
+    "category": "<stdio.h> · function",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Not Tested",
+    "notes": "Example with no completed verification evidence."
+  },
+  {
+    "name": "malloc",
+    "category": "<stdlib.h> · function",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Supported",
+    "notes": "Illustrative allocation support; this is not a release guarantee."
+  },
+  {
+    "name": "qsort",
+    "category": "<stdlib.h> · function",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Not Supported",
+    "notes": "Demonstrates an unavailable library function."
+  },
+  {
+    "name": "memcpy",
+    "category": "<string.h> · function",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Supported",
+    "notes": "Example byte-copying function entry."
+  },
+  {
+    "name": "size_t",
+    "category": "<stddef.h> · type",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Supported",
+    "notes": "Header coverage includes types as well as functions."
+  },
+  {
+    "name": "va_start / va_arg / va_end",
+    "category": "<stdarg.h> · macros",
+    "standards": [
+      "C89",
+      "C90",
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Partially Supported",
+    "notes": "Example macro family with a documented support boundary."
+  },
+  {
+    "name": "Designated initializers",
+    "category": "Language · initialization",
+    "standards": [
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Supported",
+    "notes": "Example of a feature introduced in C99."
+  },
+  {
+    "name": "restrict",
+    "category": "Language · qualifiers",
+    "standards": [
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Not Supported",
+    "notes": "Demonstration status; semantic and optimization support must be verified separately."
+  },
+  {
+    "name": "snprintf",
+    "category": "<stdio.h> · function",
+    "standards": [
+      "C99",
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Not Tested",
+    "notes": "Example C99 library function awaiting verification."
+  },
+  {
+    "name": "_Generic",
+    "category": "Language · generic selection",
+    "standards": [
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Not Tested",
+    "notes": "Example C11 feature awaiting a completed support report."
+  },
+  {
+    "name": "thrd_create",
+    "category": "<threads.h> · function",
+    "standards": [
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Not Supported",
+    "notes": "Example of an unsupported standard library facility."
+  },
+  {
+    "name": "atomic_load",
+    "category": "<stdatomic.h> · macro",
+    "standards": [
+      "C11",
+      "C17",
+      "C23"
+    ],
+    "status": "Not Tested",
+    "notes": "Example atomic facility with no verified result."
+  },
+  {
+    "name": "nullptr",
+    "category": "Language · constants",
+    "standards": [
+      "C23"
+    ],
+    "status": "Not Tested",
+    "notes": "Example C23 feature; inclusion is not a conformance claim."
+  },
+  {
+    "name": "ckd_add",
+    "category": "<stdckdint.h> · macro",
+    "standards": [
+      "C23"
+    ],
+    "status": "Not Supported",
+    "notes": "Example checked-integer facility introduced in C23."
+  }
+]

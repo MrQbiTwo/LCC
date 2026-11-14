@@ -1,0 +1,25 @@
+title: LittleCCompiler
+description: Release builds, test results and compiler support.
+url: https://mrqbitwo.github.io
+baseurl: /LCC
+lang: en
+encoding: utf-8
+timezone: UTC
+destination: build/site
+strict_front_matter: true
+liquid:
+  error_mode: strict
+exclude:
+  - build
+  - site_tools
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

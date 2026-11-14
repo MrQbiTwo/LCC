@@ -1,0 +1,10 @@
+<div class="release-index">
+  <div class="release-columns" aria-hidden="true">
+    <span>Release</span><span>Date &middot; UTC</span><span>Tests passed</span><span>Reports</span>
+  </div>
+  <div class="release-list">
+    {% for release in site.data.releases %}
+      {% include release_card.html release=release %}
+    {% endfor %}
+  </div>
+</div>

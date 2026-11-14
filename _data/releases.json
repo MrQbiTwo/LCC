@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "demo-nightly",
+    "title": "Nightly · November 14",
+    "channel": "Nightly",
+    "date": "2026-11-14",
+    "demo": true,
+    "description": "A development build with a few simulated failures to explore.",
+    "commit": "99f935a524794073dd66c3d624268b89edfcb831",
+    "nightly_number": "LCC20261114DEMO1",
+    "nightly_encoded": "TENDMjAyNjExMTRERU1PMQ==",
+    "failed_ids": [
+      "expr_001",
+      "integer_constant_ulong_wrap_subtract",
+      "type_identity_reject_enum_shadow",
+      "storage_constraint_061"
+    ]
+  },
+  {
+    "slug": "demo-snapshot",
+    "title": "1.0-sp1",
+    "channel": "Snapshot",
+    "date": "2026-11-12",
+    "demo": true,
+    "description": "A preview milestone with illustrative test results.",
+    "commit": "99f935a524794073dd66c3d624268b89edfcb831",
+    "failed_ids": [
+      "expr_001",
+      "preprocess_047",
+      "stdio_literal",
+      "floating_030",
+      "fp_constant_032",
+      "constant_expression_array_file_arithmetic",
+      "flow_labels_017",
+      "operand_reject_bitor_float",
+      "comparison_reject_array_bound",
+      "type_identity_reject_enum_shadow",
+      "aggregate_035",
+      "array_bounds_012",
+      "address_initializer_061",
+      "storage_089",
+      "tentative_struct_zero",
+      "standard_headers_offset_local_tag",
+      "vararg_aligned_overflow",
+      "cli_010"
+    ]
+  },
+  {
+    "slug": "demo-stable",
+    "title": "1.0",
+    "channel": "Stable",
+    "date": "2026-11-10",
+    "demo": true,
+    "description": "An example stable release with an all-passing demonstration report.",
+    "commit": "99f935a524794073dd66c3d624268b89edfcb831",
+    "failed_ids": []
+  }
+]

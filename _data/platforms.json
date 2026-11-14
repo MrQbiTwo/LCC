@@ -1,0 +1,44 @@
+[
+  {
+    "os": "Windows",
+    "arch": "x86-64",
+    "host": "Not Supported",
+    "target": "Not Supported"
+  },
+  {
+    "os": "Windows",
+    "arch": "arm64",
+    "host": "Not Supported",
+    "target": "Not Supported"
+  },
+  {
+    "os": "Linux",
+    "arch": "x86-64",
+    "host": "Supported",
+    "target": "Supported"
+  },
+  {
+    "os": "Linux",
+    "arch": "arm64",
+    "host": "Not Supported",
+    "target": "Not Supported"
+  },
+  {
+    "os": "Linux",
+    "arch": "RISC-V · RV64",
+    "host": "Not Supported",
+    "target": "Not Supported"
+  },
+  {
+    "os": "macOS",
+    "arch": "arm64 (Apple Silicon)",
+    "host": "Not Supported",
+    "target": "Not Supported"
+  },
+  {
+    "os": "macOS",
+    "arch": "x86-64 (Intel)",
+    "host": "Not Supported",
+    "target": "Not Supported"
+  }
+]
